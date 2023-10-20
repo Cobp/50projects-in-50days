@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contact-contenedor{
+    margin: 50px;
+    background-color: #383d37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 10px #000;
+}
+h1{
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Roboto',sans-serif;
+    text-shadow: 2px 2px 10px #000;
+    color: #df6208;
+}
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container-card{
+    border: none; 
+    cursor: pointer;
+    background-color: #df6208;
+    box-shadow: 2px 2px 10px #868585;
+    padding: 8px;
+    margin: 15px;
+    width: 130px;
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 130px;
+}
+.container-card i{
+    margin: 0px 5px;
+    font-size: 25px;
+}
+.container-card span{
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+}
+.container-card:focus{
+    transition: .5s ease-in-out;
+    transform: scale(1.03);
+    border: 1px #fff solid;
+}
+.container-card:focus.container-card i{
+    transition: transform .5s;
+    transform: scale(1.3);
+}
