@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container_main">
+        <form method="post" action="#" enctype="multipart/form-data" class="container_count">
+            <div class="edit_perfil">
+                <h1>Editar Perfil</h1>
+                <img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" alt="avatar" id="img" />
+                <input type="file" name="foto" id="foto" accept="image/*">
+                <label for="foto">Upload Photo</label>
+            </div>
+            <div class="bar"></div>
+            <div class="edit_perfil_date">
+                <h2>Datos Personales</h2>
+                <div class="date_perfil">
+                    <div class="date">
+                        <h3>Nombre</h3>
+                        <input type="text" name="Nombre" id="Nombre" required>
+                    </div>
+                    <div class="date">
+                        <h3>Apellido</h3>
+                        <input type="text" name="Apellido" id="Apellido" required
+                    </div>
+                </div>
+                <div class="date_perfil">
+                    <div class="date">
+                        <h3>Fecha de Nacimiento</h3>
+                        <input type="date" name="Cumple" id="Cumple" required>
+                    </div>
+                    <div class="date">
+                        <h3>EMail</h3>
+                        <input type="text" name="Email" id="Email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="edit_perfil_btn">
+                <button class="btn Cancelar" name="Cancelar">Cancelar</button>
+                <button class="btn Guardar" name="Guardar">Guardar Cambios</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

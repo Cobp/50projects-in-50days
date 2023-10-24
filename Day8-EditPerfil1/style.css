@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Roboto:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  max-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.container_main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #4c534d 0%, #373d38 50%, #000 100%);
+}
+.container_count{
+  font-family: 'League Spartan', sans-serif;
+  position: relative;
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 26px;
+  backdrop-filter: blur(200px);
+  margin: 10px;
+  padding: 30px;
+}
+.edit_perfil{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.edit_perfil img{
+  width: 250px;
+  margin-top: 45px;
+  cursor: pointer;
+  border: 2px dashed #f8f7f3;
+  border-radius: 50%;
+  box-shadow: 0px 48px 35px -48px #f8f7f3;
+}
+h1, h2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f7f3;
+}
+.edit_perfil input{
+  display: none;
+}
+.edit_perfil label{
+  margin: 30px 0;
+  background: #ff6000;
+  color: #f8f7f3;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.bar{
+  margin: 40px 0;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.edit_perfil_date{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.edit_perfil_date .date_perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 400px;
+}
+.edit_perfil_date
+.date_perfil .date{
+  margin-top: 15px;
+  margin-right: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 50px;
+  background-color: rgba(248, 247, 243, 0.1);
+  border-radius: 14px;
+}
+.edit_perfil_date
+.date_perfil .date input{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.147);
+  padding: 0px 10px;
+  color: #f8f7f3;
+  font-size: 16px;
+}
+.edit_perfil_btn{
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit_perfil_btn .btn{
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  width: 120px;
+  height: 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  transition: all .5s ease;
+}
+.edit_perfil_btn .btn.Cancelar{
+  background-color: transparent;
+  border: 1px solid #4c534d;
+  color: #f8f7f3;
+}
+.edit_perfil_btn .btn.Cancelar:hover{
+  background-color: rgba(248, 247, 243, 0.352);
+  transform: scale(1.1);
+}
+.edit_perfil_btn .btn.Guardar{
+  background-color: #ff6000;
+  color: #f8f7f3;
+}
+.edit_perfil_btn .btn.Guardar:hover{
+  transform: scale(1.1);
+}
